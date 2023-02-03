@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Tailwind-Test</title>
+    <!-- <style>
+      * {
+        border: 1px solid red;
+      }
+    </style> -->
+  </head>
+  <body>
+    <h1 class="text-8xl font-bold text-center my-10">
+      Hello
+      <span
+        class="bg-gradient-to-r from-blue-500 to-teal-600 bg-clip-text text-transparent"
+        >Everyone</span
+      >
+    </h1>
+
+    <section
+      class="mb-10 bg-gradient-to-r from-blue-600 via-green-600 to-red-600"
+    >
+      <h2 class="text-3xl text-center">Spacing</h2>
+      <div class="m-12 bg-blue-300">margin</div>
+      <div class="p-28 bg-purple-300">Padding</div>
+    </section>
+
+    <section class="mb-10 w-2/3 bg-red-400">
+      <h2 class="text-3xl text-center">Sizing</h2>
+      <div class="w-32 h-40 bg-slate-500">Kotak</div>
+      <div class="max-w-xs h-28 bg-green-400">Kotak 2</div>
+    </section>
+
+    <section class="mb-12 font-serif max-w-3xl mx-auto">
+      <h2 class="mb-4 text-4xl font-bold">
+        Belajar typography pada tailwindcss
+      </h2>
+      <div class="mb-4 text-lg text-gray-500">
+        By <a href="#" class="text-gray-700 font-semibold">Budi</a> 2023
+      </div>
+      <p class="mb-4">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel cupiditate
+        praesentium animi nisi tenetur reiciendis nulla exercitationem corrupti
+        nostrum fuga.
+        <a href="#" class="underline font-semibold text-blue-600"
+          >Veritatis libero pariatur vero dicta, quae perferendis</a
+        >
+        aperiam. Omnis voluptates porro aspernatur quam ut nobis officia
+        facilis. Itaque, totam explicabo autem accusamus aspernatur adipisci?
+        Quas eum sint ratione. Omnis, quidem!
+      </p>
+      <blockquote class="mb-4 italic font-thin text-xl">
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut
+        praesentium excepturi eum explicabo error quod accusantium voluptas
+        dolor, distinctio minus?"
+      </blockquote>
+      <p class="mb-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima repellat
+        inventore quis tempore consequuntur autem ipsam distinctio voluptatum
+        voluptas consequatur deserunt, natus esse dolorem sequi iste animi odit
+        maxime officia, provident vitae ex! Provident, aliquam.
+      </p>
+    </section>
+
+    <h1 class="text-4xl text-center font-semibold mb-24">
+      Background Atachment
+    </h1>
+
+    <div
+      class="max-w-xl h-96 bg-slate-300 mx-auto bg-fixed overflow-y-scroll"
+      style="background-image: url('../src/img/mercy-1.jpg')"
+    >
+      <p class="p-5 text-2xl">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus
+        eligendi quidem laudantium nam, obcaecati laboriosam consectetur.
+        Libero, facilis! Voluptate consectetur quas eius itaque commodi rerum
+        neque tempore cumque nulla aperiam? Consequuntur labore itaque
+        asperiores eveniet explicabo vitae ex maiores repudiandae aliquid fuga
+        soluta, quia odit officia officiis sit accusantium porro non, voluptatum
+        alias ducimus. Quod porro magnam et omnis mollitia cum dignissimos nisi,
+        natus itaque placeat quaerat nulla, unde dolorum dicta veritatis
+        exercitationem. Possimus tempora totam officiis dignissimos modi et
+        earum eos optio incidunt corrupti dolore eius id, sit suscipit animi
+        praesentium eaque exercitationem nemo minima omnis eligendi obcaecati
+        quibusdam qui! Error voluptates tempora facere magni doloremque
+        blanditiis officia quos voluptate ad. Et nesciunt sit quod veniam sunt
+        optio dolorem possimus, accusantium iste unde temporibus. Soluta,
+        ratione? Rerum atque sint blanditiis nisi voluptas accusantium omnis
+        incidunt vero. Eius nemo deleniti dolores quia doloribus exercitationem
+        ex tempora commodi culpa dolor? Delectus doloribus eaque accusamus,
+        doloremque esse consequuntur, impedit voluptates eos expedita modi
+        voluptatum labore ab quasi! Quibusdam a inventore laudantium molestiae
+        aliquam harum omnis laborum, obcaecati distinctio magni saepe id.
+        Voluptatem qui dicta ratione reprehenderit illum eveniet nisi blanditiis
+        rem reiciendis cupiditate recusandae obcaecati temporibus in, totam
+        facere! Harum, molestiae facilis.
+      </p>
+    </div>
+
+    <div
+      class="bg-slate-300 mt-32 h-96 max-w-xl mx-auto bg-contain bg-no-repeat bg-center rounded-t-3xl border-x-8 border-dashed border-red-500 shadow-lg shadow-teal-400 blur-sm hover:blur-none hover:brightness-125"
+      style="background-image: url('../src/img/mercy-2.jpg')"
+    >
+      <div class="w-full h-full bg-yellow-300 mix-blend-multiply"></div>
+    </div>
+
+    <hr class="my-20" />
+
+    <h1 class="text-4xl font-bold text-center">Psudo class & Psudo element</h1>
+
+    <button
+      class="my-10 bg-sky-500 px-5 py-2 rounded-full text-white font-semibold block mx-auto hover:bg-sky-600 active:bg-sky-700 focus:ring focus:ring-sky-300"
+    >
+      Simpan
+    </button>
+
+    <div
+      class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto shadow-md p-5 hover:bg-sky-500 group font-serif"
+    >
+      <h5 class="font-bold text-slate-700 text-lg mb-3 group-hover:text-white">
+        My Card
+      </h5>
+      <p
+        class="text-slate-600 group-hover:text-white selection:bg-lime-300 selection:text-slate-600 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-3"
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolore,
+        ut soluta odit quaerat nisi unde temporibus voluptate iusto explicabo
+        animi illo error, porro quidem natus est hic illum quam.
+      </p>
+    </div>
+
+    <div
+      class="max-w-lg rounded-xl shadow-md border-slate-200 p-5 mx-auto border"
+    >
+      <form action="">
+        <label for="email">
+          <span
+            class="blcok font-semibold text-slate-700 mb-1 after:content-['*'] after:text-pink-500 after:ml-0.5"
+            >Email</span
+          >
+          <input
+            type="email"
+            id="email"
+            placeholder="Masukan email"
+            class="px-3 py-2 border rounded w-full block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:border-sky-500 invalid:text-pink-500 invalid:focus:ring-pink-500 invalid:focus:border-pink-500 peer"
+          />
+          <p class="text-sm m-1 text-pink-500 invisible peer-invalid:visible">
+            Email tidak vaild
+          </p>
+        </label>
+      </form>
+    </div>
+
+    <hr class="my-20" />
+    <h1 class="text-4xl font-bold text-center mb-20">
+      Transform , Transition & Animation
+    </h1>
+
+    <div
+      class="w-40 h-40 bg-sky-500 mx-auto rounded-lg shadow-lg hover:sclae-125 hover:translate-x-16 hover:rotate-45 transition hover:bg-pink-500 origin-bottom-right"
+    ></div>
+    <div class="w-40 h-40 mx-auto mt-20 group">
+      <div
+        class="w-full h-full bg-sky-500 rounded-lg shadow-lg group-hover:rotate-180 origin-top-left transition duration-1000 delay-1000"
+      ></div>
+    </div>
+
+    <div
+      class="w-40 h-40 bg-pink-500 mx-auto rounded-lg shadow-lg mt-20 animate-goyang"
+    ></div>
+
+    <hr class="my-20" />
+    <h1 class="text-4xl font-bold text-center mb-20">Layouting</h1>
+
+    <div class="container mx-auto">
+      <div class="border rounded-lg shadow-lg p-10 relative">
+        <div
+          class="w-10 h-10 bg-pink-400 rounded-full flex -top-5 left-1/2 -translate-x-1/2 absolute"
+        >
+          <span class="text-xl m-auto">❌</span>
+        </div>
+        <div
+          class="w-10 h-10 bg-sky-400 rounded-full flex fixed bottom-5 right-5"
+        >
+          <a href="#" class="text-xl m-auto">🔝</a>
+        </div>
+        <img
+          src="../src/img/mercy-2.jpg"
+          alt="mercy"
+          width="150"
+          class="float-left mr-2"
+        />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
+          illum itaque, delectus quae odio in ullam nisi assumenda dolores
+          dolorem cumque numquam debitis qui totam consequatur iusto animi amet
+          vero veritatis aliquid magnam corrupti. Molestiae at natus harum a
+          error quisquam amet nesciunt quaerat deserunt ipsam dolores
+          necessitatibus dolore, ipsum veritatis aperiam ullam vitae nobis
+          obcaecati magnam. Facere iure pariatur voluptas nam laudantium
+          numquam, nostrum iste quae voluptates quod blanditiis, aspernatur
+          adipisci. Culpa tempore quidem quasi ratione eveniet modi accusamus
+          harum aut nulla vel minus inventore ipsa, dolore adipisci laborum
+          aliquam quis quas fugit ipsam unde velit, doloremque reprehenderit.
+          Similique.
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="border rounded-lg shadow-lg p-10 container mx-auto mt-20 columns-3"
+    >
+      <img src="../src/img/mercy-1.jpg" alt="car" class="mb-4" />
+      <img src="../src/img/mercy-1.jpg" alt="car" class="mb-4" />
+      <img src="../src/img/mercy-1.jpg" alt="car" class="mb-4" />
+      <img src="../src/img/mercy-1.jpg" alt="car" class="mb-4" />
+      <img src="../src/img/mercy-1.jpg" alt="car" class="mb-4" />
+      <img src="../src/img/mercy-1.jpg" alt="car" class="mb-4" />
+    </div>
+
+    <hr class="border-t-4 my-24" />
+
+    <h1 class="text-4xl font-bold text-center mb-20">Responsive Design</h1>
+
+    <div
+      class="container px-6 max-w-lg mx-auto sm:max-w-xl sm:bg-red-200 md:bg-teal-200 lg:bg-lime-200 xl:bg-purple-300"
+    >
+      <h3 class="text-4xl sm:text-5xl font-bold text-slate-800">
+        Boedi <span class="text-sky-500">Labs</span>
+      </h3>
+      <img
+        class="mt-4 rounded-xl shadow-xl sm:mt-6 sm:h-80 sm:w-full sm:bg-cover"
+        src="../src/img/mercy-2.jpg"
+        alt="mercy"
+      />
+      <h2
+        class="mt-6 sm:mt-8 sm:text-4xl text-2xl font-semibold text-slate-800"
+      >
+        Mercedes Benz
+      </h2>
+      <p class="mt-2 text-slate-600 sm:mt-4 sm:text-xl">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam deleniti
+        eum ducimus, laboriosam laborum placeat impedit expedita possimus alias
+        saepe cum accusamus quod reiciendis? Excepturi, temporibus. Ab culpa
+      </p>
+      <div class="mt-4 sm:mt-6">
+        <a
+          class="inline-block px-5 py-3 bg-teal-500 text-white rounded-lg shadow-lg uppercase font-semibold tracking-widest text-sm sm:text-base"
+          href="#"
+          >Subscribe Now</a
+        >
+      </div>
+    </div>
+
+    <hr class="border-t-4 my-24" />
+
+    <h1 class="text-4xl font-bold text-center mb-20">Flexbox</h1>
+
+    <div
+      class="container px-6 max-w-lg mx-auto sm:max-w-xl md:max-w-5xl lg:flex lg:max-w-full lg:px-0"
+    >
+      <div class="lg:p-12 lg:flex-1">
+        <h3 class="text-4xl sm:text-5xl font-bold text-slate-800 md:text-6xl">
+          Boedi <span class="text-sky-500">Labs</span>
+        </h3>
+        <img
+          class="mt-4 rounded-xl shadow-xl sm:mt-6 sm:h-80 sm:w-full sm:object-cover lg:hidden"
+          src="../src/img/mercy-2.jpg"
+          alt="mercy"
+        />
+        <h2
+          class="mt-6 sm:mt-8 sm:text-4xl text-2xl font-semibold text-slate-800"
+        >
+          Mercedes Benz
+        </h2>
+        <p class="mt-2 text-slate-600 sm:mt-4 sm:text-xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+          deleniti eum ducimus, laboriosam laborum placeat impedit expedita
+          possimus alias saepe cum accusamus quod reiciendis? Excepturi,
+          temporibus. Ab culpa
+        </p>
+        <div class="mt-4 sm:mt-6">
+          <a
+            class="inline-block px-5 py-3 bg-teal-500 text-white rounded-lg shadow-lg uppercase font-semibold tracking-widest text-sm sm:text-base"
+            href="#"
+            >Subscribe Now</a
+          >
+        </div>
+      </div>
+      <div class="hidden lg:flex lg:w-1/2">
+        <img
+          src="../src/img/mercy-1.jpg"
+          alt="car"
+          class="object-cover rounded-l-full"
+        />
+      </div>
+    </div>
+
+    <h2 class="mt-24 mb-10 text-center font-bold text-3xl text-slate-700">
+      My Galery
+    </h2>
+
+    <div
+      class="container mx-auto px-6 sm:flex sm:flex-wrap sm:gap-6 sm:justify-evenly"
+    >
+      <div
+        class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 sm:mb-0 md:w-80 lg:w-72"
+      >
+        <img src="../src/img/mercy-1.jpg" alt="car1" class="w-full" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+          <p class="text-sm text-slate-600">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque,
+            minus.
+          </p>
+        </div>
+      </div>
+      <div
+        class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 sm:mb-0 md:w-80 lg:w-72"
+      >
+        <img src="../src/img/mercy-2.jpg" alt="car1" class="w-full" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+          <p class="text-sm text-slate-600">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque,
+            minus.
+          </p>
+        </div>
+      </div>
+      <div
+        class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 sm:mb-0 md:w-80 lg:w-72"
+      >
+        <img src="../src/img/mercy-1.jpg" alt="car1" class="w-full" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+          <p class="text-sm text-slate-600">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque,
+            minus.
+          </p>
+        </div>
+      </div>
+      <div
+        class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 sm:mb-0 md:w-80 lg:w-72"
+      >
+        <img src="../src/img/mercy-1.jpg" alt="car1" class="w-full" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+          <p class="text-sm text-slate-600">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque,
+            minus.
+          </p>
+        </div>
+      </div>
+      <div
+        class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 sm:mb-0 md:w-80 lg:w-72"
+      >
+        <img src="../src/img/mercy-2.jpg" alt="car1" class="w-full" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+          <p class="text-sm text-slate-600">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque,
+            minus.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-t-4 my-24" />
+
+    <h1 class="text-4xl font-bold text-center mb-20">Grid system</h1>
+
+    <div class="mt-64 p-2 grid grid-cols-2 gap-2 md:grid-cols-4 md:p-4">
+      <h2
+        class="text-xl h-15 font-semibold text-slate-700 md:col-start-4 md:row-start-2 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] md:flex"
+      >
+        <span class="self-center">Welcome Everyone</span>
+      </h2>
+      <div
+        class="h-15 font-bold text-slate-600 text-lg md:col-start-2 md:row-start-2 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] md:flex"
+      >
+        <span class="self-end">@hiboedi8</span>
+      </div>
+      <div class="grid-card group">
+        <div
+          class="grid-image"
+          style="background-image: url('../src/img/img-1.jpg')"
+        ></div>
+      </div>
+      <div class="grid-card group md:col-start-3">
+        <div
+          class="grid-image"
+          style="background-image: url('../src/img/img-2.jpg')"
+        ></div>
+      </div>
+      <div class="grid-card group">
+        <div
+          class="grid-image"
+          style="background-image: url('../src/img/img-3.jpg')"
+        ></div>
+      </div>
+      <div class="grid-card group">
+        <div
+          class="grid-image"
+          style="background-image: url('../src/img/img-4.jpg')"
+        ></div>
+      </div>
+      <div class="grid-card group">
+        <div
+          class="grid-image"
+          style="background-image: url('../src/img/img-5.jpg')"
+        ></div>
+      </div>
+      <div class="grid-card group md:col-start-2">
+        <div
+          class="grid-image"
+          style="background-image: url('../src/img/img-6.jpg')"
+        ></div>
+      </div>
+      <div class="grid-card group md:col-start-4">
+        <div
+          class="grid-image"
+          style="background-image: url('../src/img/img-7.jpg')"
+        ></div>
+      </div>
+      <div class="grid-card group">
+        <div
+          class="grid-image"
+          style="background-image: url('../src/img/img-8.jpg')"
+        ></div>
+      </div>
+      <div class="grid-card group md:col-start-3">
+        <div
+          class="grid-image"
+          style="background-image: url('../src/img/img-9.jpg')"
+        ></div>
+      </div>
+      <div class="grid-card group md:col-start-3">
+        <div
+          class="grid-image"
+          style="background-image: url('../src/img/img-10.jpg')"
+        ></div>
+      </div>
+    </div>
+
+    <div class="mb-96"></div>
+  </body>
+</html>

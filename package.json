@@ -1,0 +1,14 @@
+{
+  "name": "tailwind",
+  "version": "1.0.0",
+  "description": "Grid Sytem",
+  "main": "index.js",
+  "author": "budi",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  },
+  "scripts": {
+    "start": "npx tailwindcss -i ./src/css/input.css -o ./public/css/style.css --watch"
+  }
+}
